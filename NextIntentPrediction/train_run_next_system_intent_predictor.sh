@@ -1,0 +1,2 @@
+#!/bin/bash
+CUDA_VISIBLE_DEVICES=5 python3 train_next_system_intent_predictor.py --train --test --train_file data/EDI/train_user_sentence_conv_ml.txt --train_label data/EDI/train_user_intent_conv_ml.txt --valid_file data/EDI/valid_user_sentence_conv_ml.txt --valid_label data/EDI/valid_user_intent_conv_ml.txt --test_file data/EDI/test_user_sentence_conv_ml.txt --test_label data/EDI/test_user_intent_conv_ml.txt --output_dir roberta_master_epoch10 --num_train_epochs 10
