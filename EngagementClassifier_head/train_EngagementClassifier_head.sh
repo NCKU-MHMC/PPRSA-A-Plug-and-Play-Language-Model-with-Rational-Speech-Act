@@ -1,0 +1,5 @@
+#!/bin/bash
+CUDA_VISIBLE_DEVICES=4 python3 run_pplm_engagement_train.py --pretrained_model ../GenerationModel/model-medium  --save_model --epochs 5 --output_fp output_master --dataset_fp_train data/train_user_system_conv.csv --dataset_fp_valid data/valid_user_system_conv.csv --dataset_fp_test data/test_user_system_conv.csv  
+
+CUDA_VISIBLE_DEVICES=3 python3 run_blenderbot_engagement_train.py --pretrained_model ../GenerationModel/BlenderBot  --save_model --epochs 5 --output_fp output_blenderbot_master --dataset_fp_train data/train_user_system_conv.csv --dataset_fp_valid data/valid_user_system_conv.csv --dataset_fp_test data/test_user_system_conv.csv  
+CUDA_VISIBLE_DEVICES=3 python3 run_blenderbot400M_engagement_train.py --pretrained_model ../GenerationModel/BlenderBot400M  --save_model --epochs 5 --output_fp output_blenderbot400M_master --dataset_fp_train data/train_user_system_conv.csv --dataset_fp_valid data/valid_user_system_conv.csv --dataset_fp_test data/test_user_system_conv.csv  
