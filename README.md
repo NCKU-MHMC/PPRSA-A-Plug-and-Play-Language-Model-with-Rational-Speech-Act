@@ -8,6 +8,21 @@ Developing an empathetic dialogue system has been a challenge for years. Althoug
 ## Quick Start
 
 ### Install
-
+```
 conda create -n PPRSA python=3.8 -f environment.yml
 conda activate PPRSA
+```
+
+### Train the Generation Model
+Choose base model from three models: DialoGPT, BlenderBot, and Llama.
+```
+cd GenerationModel
+bash fine-tune.sh
+```
+
+### Train the Attriute Models
+
+```
+cd IntentClassifier_head
+bash train_Intent_classifier.sh
+```
