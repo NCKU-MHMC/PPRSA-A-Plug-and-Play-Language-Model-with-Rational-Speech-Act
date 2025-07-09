@@ -1,9 +1,3 @@
-<p align="center">
-    <br>
-    <img src="doc/icon.png" width="400"/>
-    <br>
-<p>
-
 # DialogRPT: Dialog Ranking Pretrained Transformers
 
 [DialogRPT](https://arxiv.org/abs/2009.06978/) predicts human feedback (upvotes👍 or replies💬) of dialogue responses. 
