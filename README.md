@@ -17,6 +17,7 @@ conda activate PPRSA
 ### Downloading Models
 ------------------
 Take BlenderBot-small as an example.
+
 1.download the BlenderBot-small model: https://huggingface.co/facebook/blenderbot_small-90M
 2.place the model in the /GenerationModel directory.
 
