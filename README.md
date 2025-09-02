@@ -14,6 +14,14 @@ conda create -n PPRSA python=3.8 -f environment.yml
 conda activate PPRSA
 ```
 
+### Downloading Models
+------------------
+Take BlenderBot-small as an example.
+1.download the BlenderBot-small model: https://huggingface.co/facebook/blenderbot_small-90M
+2.place the model in the /GenerationModel directory.
+
+*you could use other models,but you need to maually change the configurations.
+
 ### Train the Generation Model
 Choose base model from three models: DialoGPT, BlenderBot, and Llama.
 ```
@@ -35,4 +43,10 @@ bash train_EngagementClassifier_head.sh
 ```
 cd IntentClassifier_head
 bash train_Intent_classifier.sh
+```
+
+### Run PPRSA
+```
+cd EmpathyPerturb
+bash PPRSA.sh
 ```
